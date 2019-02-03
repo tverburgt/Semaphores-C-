@@ -1,0 +1,8 @@
+# Semaphores-C-
+producer&lt;->producer&lt;->consumer&lt;->producer A semaphore, in its most basic form, is a protected integer variable that can facilitate and restrict access to shared resources in a multi-processing environment. In this report we are using semaphores to allow one process to access shared memory one at a time. In simple terms semaphores allow one process to do a job and then once it is finished its job it signals for another process to take over.
+
+A semaphore, in its most basic form, is a protected integer variable that can facilitate and restrict access to shared resources in a multi-processing environment. In this report we are using semaphores to allow one process to access shared memory one at a time.
+In simple terms semaphores allow one process to do a job and then once it is finished its job it signals for another process to take over.
+
+This assignment involves an implementation of the Producer Consumer problem using shared memory and semaphores. You will make use of the system calls to create and use semaphores that we covered in the lab. You will have two programs (and hence two process) one called the Producer and the other Consumer. These programs will be run in separate terminal windows. The Producer will ask the user to enter number and will put them in the shared memory area. No more than 8 numbers should be in memory are at a time (buffer is length 8). If there are 8 items in the buffer the Producer should block. The Consumer should take the numbers out of the shared memory area and print them to the screen. If there are no items in the buffer the consumer should block.
+In this report we are going to write and examine 3 multi-processing environments.
